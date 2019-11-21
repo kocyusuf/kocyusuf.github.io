@@ -1,0 +1,171 @@
+1
+00:00:00,000 --> 00:00:15,001
+Oncelikle grafigi cizdirmek icin gerekli olan matplotlib modulunu projemize dahil edelim.
+
+2
+00:00:17,000 --> 00:00:23,001
+Periyotlari belirli bir aralikta olusturmak icin numpy modulunu de dahil edelim.
+
+3
+00:00:26,000 --> 00:00:44,001 
+0~10 sn araliginda 0.01 sn artacak sekilde periyot listesi olusturmak icin arange fonksiyonunu kullanalim.
+
+4
+00:00:46,000 --> 00:00:53,001
+Bu olusturdugumuz listeyi T isimli bir degiskene atayalim.
+
+5
+00:00:55,000 --> 00:01:14,001
+Kullanicidan 'Kisa periyot tasarim spektral ivme katsayisi' ni girmesini isteyelim.
+
+6
+00:01:17,000 --> 00:01:24,001
+Ve tabii bu degeri ondalikli degere cevirelim.
+
+7
+00:01:25,000 --> 00:01:44,001
+Kullanicidan '1 sn periyot icin tasarim spektral ivme katsayisi' ni girmesini isteyelim.
+
+8
+00:01:45,000 --> 00:02:00,001
+Grafigin TA ve TB kose periyotlarini hesaplayalim.
+
+9
+00:02:05,000 --> 00:02:12,001
+Sabit yerdegistirme bolgesine gecis periyotunu 6 sn olarak belirleyelim.
+
+10
+00:02:14,000 --> 00:02:25,001
+Daha onceden belirledigimiz 'T' listesindeki her bir periyoda 'for' dongusu yardimi ile eriselim.
+
+11
+00:02:26,000 --> 00:02:40,001
+Ele aldigimiz her bir i periyoduna TBDY2018'teki kosul ifadelerini uygulayalim.  
+
+12
+00:02:40,000 --> 00:02:50,001
+Bunun icin 'if' anahtar kelimesi ile kosul ifadelerini girelim.
+
+13
+00:02:58,000 --> 00:03:11,001
+Elde ettigimiz her bir Sae degerini dusey dogrultudaki koordinat degerleri olarak kullanmak icin bir listeye atamaliyiz.
+
+14
+00:03:12,000 --> 00:03:14,001
+Bunun icin spectrum isimli bir bos liste olusturduk.
+
+15
+00:03:15,000 --> 00:03:20,001
+Her bir Sae degerini append() fonksiyonu ile listemize ekleyelim.
+
+16
+00:03:24,000 --> 00:03:34,001
+Kosul ifadesini saglayan her bir periyot(i) degerini yatay dogrultudaki koordinat degerleri olarak kullanmak icin bir listeye atamaliyiz.
+ 
+17
+00:03:35,000 --> 00:03:40,001
+append() fonksiyonu ile periyotlarimizi de listemize ekleyelim.
+
+18
+00:03:45,000 --> 00:04:07,001
+Benzer sekilde diger kosullarida TBDY2018'e gore yazalim.
+
+19
+00:05:45,000 --> 00:05:55,001
+plot() fonksiyonunu kullanarak grafigimizi cizdirelim. 
+
+20
+00:05:57,000 --> 00:06:02,001
+fonksiyon parametreleri olarak x koordinatlari icin period listesini,
+
+21
+00:06:02,300 --> 00:06:05,001
+y koordinatlari icin spectrum listesini kullanalim.
+
+22
+00:06:06,000 --> 00:06:09,001
+grafigimizin rengini de yesil yapalim.
+
+23
+00:06:10,000 --> 00:06:36,001
+ve grafigimize bir baslik ekleyelim
+
+24
+00:06:37,000 --> 00:06:52,001
+grafigimizde x dogrultusu koordinatlarina 'Periyot' ismini verelim.
+
+25
+00:06:53,000 --> 00:07:18,001
+ayni sekilde y dogrultusuna da bir isim belirleyelim.
+
+26
+00:07:20,000 --> 00:07:25,001
+show() fonksiyonu ile grafigimizi ekranda gosterilmesini saglayalim.
+
+27
+00:07:26,000 --> 00:07:27,001
+Ve programimizi calistiralim.
+
+28
+00:07:30,000 --> 00:07:32,001
+Sds degerini girelim.
+
+29
+00:07:34,000 --> 00:07:36,001
+Sd1 degerimizi girelim.
+
+30
+00:07:37,000 --> 00:07:40,001
+Ve iste spektrum grafigimiz.
+
+31
+00:07:40,100 --> 00:07:44,001
+Isterseniz bazi girdilerimizi degistirelim.
+
+32
+00:07:47,000 --> 00:07:51,001
+periyot listemizi 15 sn'ye kadar olusturalim
+
+33
+00:07:52,000 --> 00:07:55,001
+grafik rengini de eflatun olarak ayarlayalim. 
+
+34
+00:07:56,000 --> 00:07:59,001
+renk belirlemek zorunda degiliz.
+
+35
+00:08:0,000 --> 00:08:03,001
+varsayilan renk mavi olarak grafik yine de cizdirilecektir.
+
+36
+00:08:04,000 --> 00:08:08,001
+bu degerler IMO El Kitabi Ornek BA-1 deki projeye ait.
+
+37
+00:08:09,000 --> 00:08:15,001
+iste eflatun grafigimiz
+
+38
+00:08:16,000 --> 00:08:18,001
+Izlediginiz icin tesekkurler.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
